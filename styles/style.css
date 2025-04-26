@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 100px 50px;
+  padding: 115px 50px 95px 50px;
 }
 
 .navigation-links-wrapper {
@@ -12,7 +12,9 @@
 }
 
 .main-logotype {
-  width: 148px;
+  position: relative;
+  top: 2px;
+  width: 135px;
 }
 
 .link {
@@ -24,6 +26,14 @@
   text-transform: lowercase;
 }
 
+.link-active {
+  border-bottom: none;
+}
+
+.link-see-more {
+  font-size: 20px;
+}
+
 .navigation-link {
   padding-left: 5px;
   list-style: circle;
@@ -32,14 +42,10 @@
 .navigation-link:nth-child(1) {
   padding-left: 0;
   list-style: none;
-
-  .link {
-    border-bottom: 0;
-  }
 }
 
 .address {
-  width: 240px;
+  width: 242px;
 }
 
 .address-alignment {
@@ -58,6 +64,7 @@
 
 .overlay {
   position: absolute;
+  inset: 0;
   z-index: 0;
   width: 100%;
   height: 100%;
@@ -66,8 +73,9 @@
 
 .hero-section {
   position: relative;
-  margin-bottom: 180px;
+  margin-bottom: 182px;
   background: url("../images/cover.jpg");
+  background-position: center;
   background-size: cover;
 }
 
@@ -81,22 +89,32 @@
   color: #fff;
   font-weight: 700;
   font-size: 100px;
-  letter-spacing: 28px;
+  letter-spacing: 30px;
   text-transform: uppercase;
 }
 
-.line-01 {
+.hero-description-spacing {
+  letter-spacing: 0.2px;
+}
+
+.line {
   display: block;
+}
+
+.line-aligned-left {
   text-align: left;
 }
 
-.line-02 {
-  display: block;
+.line-aligned-center {
   text-align: center;
+  padding-top: 18px;
+  padding-left: 32px;
 }
 
-.line-03 {
-  display: block;
+.line-aligned-right {
+  position: relative;
+  left: 30px;
+  padding-top: 18px;
   text-align: right;
 }
 
@@ -104,6 +122,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: #fff;
   font-weight: 400;
   font-size: 22px;
@@ -115,16 +134,21 @@
 .hero-button {
   border: 1px solid;
   padding: 12px 32px;
+  color: #fff;
+  font-size: 22px;
+  line-height: 100%;
+  text-transform: uppercase;
+  background: none;
 }
 
-.h2-title {
+.subtitle {
   font-weight: 700;
   font-size: 40px;
   line-height: 100%;
   text-transform: uppercase;
 }
 
-.h2-title-spacing {
+.subtitle-spacing {
   padding-left: 40px;
 }
 
@@ -136,26 +160,32 @@
 .lots-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  gap: 24px;
   margin: 30px 0;
 }
 
 .lot-card {
   position: relative;
-  height: 596px;
+  min-height: 596px;
   list-style: none;
 }
 
-.lot-card-image-01 {
+.lot-card-image-movie {
   background: url("../images/card-lot-01.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
-.lot-card-image-02 {
+.lot-card-image-book {
   background: url("../images/card-lot-02.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
-.lot-card-image-03 {
+.lot-card-image-picture {
   background: url("../images/card-lot-03.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .lot-card-link {
@@ -193,17 +223,18 @@
 
 .see-more-wrapper {
   padding-left: 40px;
+  padding-top: 4px;
 }
 
 .auction {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 16px;
+  gap: 24px;
   margin-bottom: 180px;
 }
 
 .auction-copy {
-  padding-top: 132px;
+  padding-top: 140px;
 }
 
 .auction-logotype-column {
@@ -213,6 +244,8 @@
 
 .auction-logotype-wrapper {
   position: relative;
+  top: 0;
+  left: 13px;
   width: 240px;
   height: 240px;
   border-radius: 50%;
@@ -229,6 +262,7 @@
 
 .auction-description {
   padding-top: 24px;
+  padding-right: 27px;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
@@ -241,7 +275,7 @@
 .footer {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  padding: 0px 50px 80px 50px;
+  padding: 2px 50px 80px 50px;
 }
 
 .footer-navigation-items {
