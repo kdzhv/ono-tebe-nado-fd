@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 115px 50px 95px 50px;
+  padding: 92px 50px 96px 50px;
 }
 
 .navigation-links-wrapper {
@@ -166,26 +166,22 @@
 
 .lot-card {
   position: relative;
+  background-position: center;
+  background-size: cover;
   min-height: 596px;
   list-style: none;
 }
 
 .lot-card-image-movie {
-  background: url("../images/card-lot-01.jpg");
-  background-position: center;
-  background-size: cover;
+  background-image: url("../images/card-lot-01.jpg");
 }
 
 .lot-card-image-book {
-  background: url("../images/card-lot-02.jpg");
-  background-position: center;
-  background-size: cover;
+  background-image: url("../images/card-lot-02.jpg");
 }
 
 .lot-card-image-picture {
-  background: url("../images/card-lot-03.jpg");
-  background-position: center;
-  background-size: cover;
+  background-image: url("../images/card-lot-03.jpg");
 }
 
 .lot-card-link {
@@ -292,9 +288,6 @@
   line-height: 24px;
   list-style: none;
 
-  .link {
-    border-bottom: 0;
-  }
 }
 
 .copy-center {
